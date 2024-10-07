@@ -2,7 +2,7 @@ import {classNames} from "../utils/classNames";
 interface IInputProps
   extends React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>,
   HTMLInputElement>{
-  error?: string;
+  error?: string | boolean;
 }
 export const Input: React.FC<IInputProps>= ({
   error,
